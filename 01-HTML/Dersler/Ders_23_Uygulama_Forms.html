@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ders 23 - Uygulama, HTML Form Elemanları</title>
+</head>
+<body>
+    <h1>Lütfen Formu Eksiksiz Doldurunuz.</h1>
+    <hr>
+    <form action="/Home/Personel">
+        <h4>Hesap Bilgileriniz</h4>
+            <p>Kullanıcı Adı: <input type="text" name="username" placeholder="Kullanıcı adı giriniz." required></p>
+            <p>E-Posta: <input type="email" name="email" placeholder="E-Posta adresini giriniz." required></p>
+            <p>Parola: <input type="password" name="password" placeholder="Parola giriniz." required></p>
+        <h4>Kişisel Bilgileriniz</h4>
+            <p>Ad: <input type="text" name="name"></p>
+            <p>Soyad: <input type="text" name="surname"></p>
+            <p>
+                Şehir: 
+                <select name="country" id="">
+                    <option>Seçiniz</option>
+                    <option value="Ankara">Ankara</option>
+                    <option value="İstanbul">İstanbul</option>
+                    <option value="İzmir">İzmir</option>
+                    <option value="Tekirdağ">Tekirdağ</option>
+                </select>
+            </p>
+            <p>
+                Cinsiyet:
+                <input type="radio" name="cinsiyet"> Erkek
+                <input type="radio" name="cinsiyet"> Kadın
+            </p>
+            <p>
+                Hobileriniz:
+                <input type="checkbox" name="hobi"> Sinema
+                <input type="checkbox" name="hobi"> Gezi
+                <input type="checkbox" name="hobi"> Spor
+                <input type="checkbox" name="hobi"> Okuma
+            </p>
+            <input type="submit" value="Kaydet">
+            <input type="reset" value="Sıfırla">
+    </form>
+</body>
+</html>

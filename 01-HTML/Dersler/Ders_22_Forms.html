@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ders 22 - Formlar</title>
+</head>
+<body>
+    <form action="/Home/Register">
+        <p>Ad <input type="text" name="ad" placeholder="Adınızı giriniz" required></p>
+        <p>Soyad <input type="text" name="soyad" placeholder="Soyadınızı giriniz." required></p>
+        <p>E-Posta <input type="email" name="email" required></p>
+        <p>Beni Hatırla <input type="checkbox" name="benihatirla"></p>
+        <p>
+            <!--checkbox'larda tek seçim yapabilmek için grup oluşturulmalı. Grup oluşturmak için her iki checkbox'ında name attribut değeri aynı yapılmalıdır.-->
+            Erkek <input type="radio" name="cinsiyet"> 
+            Kadın <input type="radio" name="cinsiyet">
+        </p>
+        <p>
+            Hobiler <br> 
+            Sinema <input type="checkbox" name="hobi">
+            Spor <input type="checkbox" name="hobi">
+            Okuma <input type="checkbox" name="hobi">
+        </p>
+        <p>
+            <select name="sehir" id="">
+                <Option>Kocaeli</Option>
+                <Option>İstanbul</Option>
+                <Option>Ankara</Option>
+            </select>
+        </p>
+        <p>
+            <select name="sehirler" id="" multiple>
+                <Option>Kocaeli</Option>
+                <Option>İstanbul</Option>
+                <Option>Ankara</Option>
+            </select>
+        </p>
+        <input type="submit" value="Kaydet"> <!--Farklı tiplerdeki inputları incelemek için internette "HTML-Input" aratılabilir.-->
+        <input type="reset" value="Sıfırla"> <!--input form elemanı tipi reset olarak seçilirse kullanıcı bu elemana tıkladığında form elemanlarının tamamı default değerlere sıfırlanır.-->
+    </form>
+</body>
+</html>
